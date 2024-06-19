@@ -1,0 +1,154 @@
+body{
+     background-image: url('background6.png') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover; 
+    /* background-color: navy; */
+    width:100%;
+    height:100%;
+    content:"";
+    margin:0px;
+    
+}
+header{
+    display:inline-block;
+    /* background-color: navy; */
+    
+}
+
+.left{
+    position:absolute;
+    display:inline-block;
+    /* background-color: navy; */
+}
+.left img{
+    margin:15px;
+    height:60px;
+    width:60px;
+    animation:left 2s ;
+    animation-iteration-count: 1;
+    animation-delay:1s;
+}
+@keyframes left {
+    0%{
+        tranform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(360deg)
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+    
+}
+.navbar{
+    display:flex;
+    justify-content: center;
+    /* border:2px solid black; */
+    align-items:center;
+    height:90px;
+    /* background-color: navy; */
+         
+
+}
+.details{
+    margin:100px;
+    /* border: 2px solid black; */
+    /* background-color: navy; */
+}
+.details li{
+    list-style: none;
+    float:left;
+    font-size:25px;
+    padding:60px;
+    text-decoration: none;
+    
+}
+.details li a{
+    color:grey;
+    font-family:Mukta;
+    text-decoration: none;  
+}
+.details li a:hover{
+    color:blanchedalmond;
+    font-size:30px;
+    transition:all 0.2s;  
+}
+.details li a.whatsapp{
+    width:20px;
+}
+.details li a.Home{
+    color:bisque;
+    font-size:27px;
+}
+.socialmedia{   
+    float:right;
+    margin-top:20px;
+    /* margin-top:720px; */
+    margin-right:4px;  
+    /* background-color: navy; */
+}
+.whatsapp{
+    width:40px;
+    height:40px;
+    margin-right:15px;
+}
+.whatsapp:hover{
+    width:45px;
+    height:45px;
+    transition:all 0.3s;
+}
+.instagram{
+    width:40px;
+    height:40px;
+    margin-right:20px;
+    margin-left:40px;
+}
+.instagram:hover{
+    width:45px;
+    height:45px;
+    transition:all 0.3s;
+}
+.number{
+    font-family: Cabin;
+    color:white;
+    text-align: center;
+    margin-right:60px;
+    margin-left:-70px
+}
+.introduction{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.info{
+    margin-top:120px;
+    margin-bottom:20px;
+    width:650px;
+    font-size:30px;
+    margin-left:100px;
+    background-color:lightcyan;
+    border:2px solid yellow;
+    border-radius: 10px;
+    padding:20px;
+    box-shadow: 2px 2px 0px 5px black;
+    animation-name: text;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    font-family:Cabin;
+    text-align: center;
+
+}
+@keyframes text {
+    0%{
+        width:0px;
+    }
+        100%{
+        
+       width:650px;
+    }
+    
+}
+.avatar img{
+    margin-top:120px;
+    margin-left:200px;
+}
